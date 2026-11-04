@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipes and cooking tips from Bender's kitchen.">
+    <title>Recipe | Bender's kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/recipes.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="inner-page" data-page="recipe">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+        <nav class="navigation" aria-label="Main navigation">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe-detail.html">Recipes</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="kitchen.html">In the kitchen</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <!-- Recipe overview -->
+            <section class="recipe-overview page-width" aria-labelledby="recipe-title">
+                <div class="recipe-overview_text">
+                    <p class="eyebrow">#1 Bender's most shiny recipe</p>
+                    <h1 id="recipe-title">Boozy brown <strong>Lentil soup</strong></h1>
+                    <div class="recipe-facts" aria-label="Recipe information">
+                        <span id="recipe-time">◷ 40 minutes</span><span id="recipe-calories">230 calories</span><span id="recipe-level">Beginner</span>
+                    </div>
+                    <h2 class="small-heading">Ingredients</h2>
+                    <ul id="ingredients" class="ingredients-list"></ul>
+                    <div class="recipe-actions">
+                        <button class="outline-button" id="print-recipe" type="button">Print</button>
+                        <button class="outline-button" id="favorite-recipe" type="button" aria-pressed="false">♡ Favourite</button>
+                    </div>
+                    <p id="favorite-status" class="status-text" role="status"></p>
+                </div>
+                <div class="recipe-overview_image"><img id="recipe-image" src="https://picsum.photos/700/700?random=10" alt="Random placeholder for the recipe"></div>
+            </section>
+
+            <!-- Cooking instructions -->
+            <section class="recipe-instructions page-width" aria-labelledby="instructions-title">
+                <h2 id="instructions-title" class="section-heading">Instructions</h2>
+                <ol id="instructions" class="instructions-list"></ol>
+            </section>
+
+            <!-- Alternate layout from the reference, with a cooking checklist -->
+            <section class="recipe-bonus page-width" aria-labelledby="bonus-title">
+                <div><h2 id="bonus-title" class="section-heading">Instructions (bonus)</h2>
+                    <p class="section-intro">Tick each step as you cook.</p>
+                    <div id="cooking-checklist" class="cooking-checklist"></div>
+                </div>
+                <aside><h2 class="section-heading">Ingredients</h2><ul id="bonus-ingredients" class="bonus-ingredients"></ul></aside>
+            </section>
+            <div class="page-width recipe-back"><a class="button" href="search.html">Find another recipe</a></div>
+            <noscript><p class="page-width">Please enable JavaScript to display the recipe ingredients and instructions.</p></noscript>
+</main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div><p class="footer-title">Bender's kitchen</p><p>Good food. Shiny recipes.</p></div>
+                <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="recipe-detail.html">Recipes</a><a href="search.html">Search</a><a href="kitchen.html">In the kitchen</a></nav>
+                <div><p>A student cooking website.</p><p>Random images provided by Picsum.</p></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

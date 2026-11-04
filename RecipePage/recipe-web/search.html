@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipes and cooking tips from Bender's kitchen.">
+    <title>Search | Bender's kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/recipes.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="inner-page" data-page="search">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+        <nav class="navigation" aria-label="Main navigation">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe-detail.html">Recipes</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="kitchen.html">In the kitchen</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <!-- Full search and category filters -->
+            <section class="full-search page-width" aria-labelledby="search-title">
+                <form id="recipe-search" action="search.html" method="get" class="search-form" role="search">
+                    <div class="search-form_text">
+                        <h1 id="search-title">Full search</h1>
+                        <label class="visually-hidden" for="recipe-query">Search recipes</label>
+                        <div class="search-box"><input id="recipe-query" class="search-input" type="search" name="q" placeholder="Search"><button class="search-submit" type="submit" aria-label="Search recipes">⌕</button></div>
+                        <p class="search-hint">Let's get cooking!</p>
+                    </div>
+                    <fieldset class="search-filters">
+                        <legend>Search filter: category</legend>
+                        <div class="filter-options"><label><input type="radio" name="category" value="all" checked> All recipes</label><label><input type="radio" name="category" value="veg"> Vegetarian</label>
+<label><input type="radio" name="category" value="seafood"> Seafood</label>
+<label><input type="radio" name="category" value="pasta"> Pasta</label>
+<label><input type="radio" name="category" value="chicken"> Chicken</label>
+<label><input type="radio" name="category" value="misc"> Snacks</label>
+<label><input type="radio" name="category" value="meats"> Beef/Pork</label>
+<label><input type="radio" name="category" value="dessert"> Dessert</label></div>
+                        <label class="favorite-filter"><input id="favorites-only" type="checkbox" name="favorites" value="1"> Favourites only</label>
+                    </fieldset>
+                    <div class="search-form_actions"><button class="button" type="submit">Search recipes</button><button class="outline-button" id="reset-search" type="button">Reset filters</button></div>
+                </form>
+            </section>
+            <section class="search-results page-width" aria-label="Recipe search results">
+                <p id="results-count" class="results-count" role="status"></p>
+                <div id="search-results"></div>
+                <noscript><p>Enable JavaScript to search and filter recipes.</p></noscript>
+            </section>
+</main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div><p class="footer-title">Bender's kitchen</p><p>Good food. Shiny recipes.</p></div>
+                <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="recipe-detail.html">Recipes</a><a href="search.html">Search</a><a href="kitchen.html">In the kitchen</a></nav>
+                <div><p>A student cooking website.</p><p>Random images provided by Picsum.</p></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
